@@ -1,0 +1,61 @@
+.MainContainer {
+  width: 90%;
+  margin: 20px auto;
+}
+.Search {
+  width: 99.6%;
+  height: 30px;
+  outline: none;
+  border: 1px solid #dddddd;
+  padding-left: 8px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td,
+th {
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.actionDiv{
+    display: flex;
+    gap: 10px;
+}
+.actionDiv button{
+    background-color: transparent;
+    border: none;
+    font-size: 20px
+}
+.actionDiv button:nth-child(2){
+    color: red;
+    
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.pagination{
+    margin-right: 40%;
+    display: flex;
+    gap: 10px;
+}
+.deleteAllBtn{
+    background-color: rgb(255, 55, 88);
+    border-radius: 18px;
+    padding:10px 20px;
+    color: white;
+    font-size: 700;
+    border: none;
+}
+.paginationBtn{
+    border:none;
+    border-radius: 50%;
+    background-color: rgb(27, 150, 216);
+    color: #fff;
+    padding: 0 15px;
+}
+
