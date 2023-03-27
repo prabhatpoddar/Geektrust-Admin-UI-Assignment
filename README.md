@@ -7,7 +7,8 @@ The interface is designed with simplicity and ease of use in mind, with the main
 The pagination feature allows administrators to navigate through a large amount of data with ease. The search functionality is also included, which allows administrators to search for specific data based on certain criteria.
 
 Overall, the Geektrust Admin Panel UI project provides an easy-to-use, secure, and scalable solution for managing data through an API.
-## Visit Site :-https://bitter-measure-5999-prabhatpoddar.vercel.app/
+
+## Visit Site :-https://geekadmin-prabhatpoddar.vercel.app/
 
 ### Pages:
 
