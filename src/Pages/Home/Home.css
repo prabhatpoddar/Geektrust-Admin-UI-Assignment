@@ -58,4 +58,19 @@ th {
     color: #fff;
     padding: 0 15px;
 }
+.editInput{
+  height: 30px;
+  outline: none;
+  border: 1px solid #dddddd;
+  padding-left: 8px;
 
+}
+.editBtn{
+  border: none;
+  height: 30px;
+  margin-left: 10px;
+  border-radius: 15px;
+  width: 100px;
+  background-color: greenyellow;
+
+}

@@ -81,10 +81,8 @@ const Home = () => {
                                 <td>
                                     {editData.id === el.id ? (
                                         <>
-                                            <input type="text" value={editData.name} onChange={(e) => setEditData({ ...editData, name: e.target.value })} />
-                                            <input type="text" value={editData.email} onChange={(e) => setEditData({ ...editData, email: e.target.value })} />
-                                            <input type="text" value={editData.role} onChange={(e) => setEditData({ ...editData, role: e.target.value })} />
-                                            <button onClick={() => {
+                                            <input className='editInput' type="text" value={editData.name} onChange={(e) => setEditData({ ...editData, name: e.target.value })} />
+                                            <button className='editBtn' onClick={() => {
                                                 const newUsers = [...user];
                                                 newUsers[i] = editData;
                                                 setUser(newUsers);
@@ -97,8 +95,36 @@ const Home = () => {
                                         </>
                                     )}
                                 </td>
-                                <td>{el.email}</td>
-                                <td>{el.role}</td>
+                                <td>   {editData.id === el.id ? (
+                                        <>
+                                            <input type="text" className='editInput' value={editData.email} onChange={(e) => setEditData({ ...editData, email: e.target.value })} />
+                                            <button className='editBtn' onClick={() => {
+                                                const newUsers = [...user];
+                                                newUsers[i] = editData;
+                                                setUser(newUsers);
+                                                setEditData({});
+                                            }}>Save</button>
+                                        </>
+                                    ) : (
+                                        <>
+                                            {el.email}
+                                        </>
+                                    )}</td>
+                                <td>   {editData.id === el.id ? (
+                                        <>
+                                            <input type="text" className='editInput' value={editData.role} onChange={(e) => setEditData({ ...editData, role: e.target.value })} />
+                                            <button className='editBtn' onClick={() => {
+                                                const newUsers = [...user];
+                                                newUsers[i] = editData;
+                                                setUser(newUsers);
+                                                setEditData({});
+                                            }}>Save</button>
+                                        </>
+                                    ) : (
+                                        <>
+                                            {el.role}
+                                        </>
+                                    )}</td>
                                 <td><div className='actionDiv'>
                                     <button onClick={() => handelUpdate(i)}><FaEdit /></button>
                                     <button onClick={() => handelDelete(i)}><MdOutlineDelete /></button>
